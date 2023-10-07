@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Bindings</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Learning Vue Js</h1>
+        <p> <span class="topic">Form Input Bindings</span></p>
+    </header>
+    <section id="binding">
+        <input type="text" v-model="fName" placeholder="Enter Your First Name">
+        <h2 class="binding-result">Full Name: {{ fName }}</h2>
+        <input type="text" v-model="lName" placeholder="Enter Your Last Name">
+        <h2 class="binding-result">Full Name: {{ lName }}</h2>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <section id="event">
+        <div class="event">
+            <button class="btn" v-on:click="add(5)">ADD + 5</button>
+        <button class="btn" v-on:click="remove(5)">Remove - 5</button>
+        <h1 class="event-title">Show {{count}}</h1>
+        </div>
+
+        <div class=""></div>
+        
+    </section>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

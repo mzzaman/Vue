@@ -1,0 +1,24 @@
+.event {
+    max-width: 550px;
+    height: 100%;
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 120px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background: teal;
+    padding: 10px;
+    color: white;
+    margin-right: 15px;
+}
+
+.event-title {
+    text-align: center;
+    color: #d68383;
+    font-size: 3rem;
+}

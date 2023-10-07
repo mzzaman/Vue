@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Syntax</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!--Text Interpolation-->
+
+
+<div id="app">
+    <h1>Welcome <span>{{name}}</span></h1>
+</div>
+
+
+
+<!--Raw HTML-->
+<div id="rawHtml">
+    <h1>Display Text Using <sapn v-html="raw_url" style="color: red"></sapn></h1>
+</div>
+
+<section id="events">
+    <h2>Events in Action</h2>
+    <p v-once>Starting Count: {{counter}}</p>
+    <button v-on:click="add(2)">Add + 2</button>
+    <button v-on:click="reduce(2)">Reduce - 2</button>
+    <p>Result: {{counter}}</p>
+    <input type="text" v-model="name" >
+    <button v-on:click="resetInput">Reset</button>
+    <p>Your Name: {{name}}</p>
+    
+
+
+</section>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
